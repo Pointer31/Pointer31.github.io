@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script src="scripts/snake.js"></script>  -->
+        <meta charset="utf-8">
+        <!-- <link rel="icon" type="image/x-icon" href="images/.png"> -->
+        <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        window.onload = function () {
+            var mvp = document.getElementById('myViewport');
+            mvp.setAttribute('content','width=430');
+        }
+        </script>
+        <style>
+            * {
+                font-family: "Helvetica";
+            }
+            .row {
+              display: flex;
+            }
+            .column {
+              float: left;
+            }
+            .left {
+              width: calc(20% - 16px);
+              /*border-radius: 10px;*/
+            }
+            .middle {
+              width: 60%;
+              padding-right: 16px;
+              padding-left: 16px;
+              min-height: calc(100vh - 40px); 
+              border-radius: 20px;
+              /*min-width: 600px;*/
+              /*min-height: 100vh;*/
+              /* height: auto !important; min-height hack
+              height: 100%;      - 150px       min-height hack*/
+            }
+            @media only screen and (max-width: 1000px) {
+                .middle
+                {
+                    min-width: min(90%, 600px)
+                    /*max-width: ;*/
+                }
+            }
+
+            .right {
+              width: calc(20% - 16px);
+              /*border-radius: 10px;*/
+            }
+
+            .button_fancy {
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            }
+            .button_fancy_notclickable {
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            }
+            .button_fancy:hover {
+                background-color: rgba(255, 255, 255, 0.3); 
+            }
+            .button_width {
+                min-width: 150px;
+                min-height: 60px;
+            }
+
+        </style>
+        <title>TWPlus mod</title>
+    </head>
+    <body style="background-color: black; background-image: url('tw_theme.png'); background-size: cover; color-scheme: dark; color: white;">
+        <div class="row">
+            <div class="left" style="background-color:transparent;">
+
+            </div>
+
+            <div class="middle" style="background-color: rgba(0,0,0,0.5);">
+                <center><h2>Teeworlds Plus Server Mod<h2></center>
+                Modification by Pointer of tw+ server by teetime, for the game Teeworlds!<br>
+                <br>
+                You may find the v0.9.0 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
+                <br>
+                <!-- <div class="button_fancy_notclickable">
+                    <div class="button_width">       
+                    <img style="filter: invert(100%);" src="brands-apple.svg" alt="apple icon" width="30" style="padding: 15px;">
+                    <div style="">Compilable</div></div>
+                </div>--> 
+                <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.9.0/tw_plus_0.9.0_linux.zip">
+                    <div class="button_width">   
+                    <img style="filter: invert(100%);" src="brands-linux.svg" alt="tux icon" width="30" height="30" style="padding: 15px;">
+                    <div style="">Download (Linux)</div></div>
+                </a>
+                <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.9.0/tw_plus_0.9.0_windows.zip">
+                    <div class="button_width">      
+                    <img style="filter: invert(100%);" src="brands-windows.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
+                    <div style="">Download (Windows)</div></div>
+                </a>
+                <!-- <a href="https://github.com/Pointer31/ddnet_client/tree/infclass-based">Github (infclass based)</a> -->
+                <br><br>Features include:
+                <ul>
+                    <li>Server-side bots!</li>
+                    <li>Extra gamemodes!</li>
+                    <li>Extra map features!</li>
+                    <li>More silly features!</li>
+                </ul> 
+                <div style="position: absolute; bottom: 45px;">
+                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus">
+                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
+                    </a>
+                </div>
+            </div>
+
+            <div class="right" style="background-color:transparent;">
+
+            </div>
+        </div>
+    </body>
+</html>
