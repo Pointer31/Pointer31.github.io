@@ -49,6 +49,28 @@
               /*border-radius: 10px;*/
             }
 
+            .button_fancy {
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            }
+            .button_fancy_notclickable {
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            }
+            .button_fancy:hover {
+                background-color: rgba(255, 255, 255, 0.3); 
+            }
+            .button_width {
+                min-width: 150px;
+                /*min-height: 60px;*/
+            }
+
         </style>
         <title>Duckclient</title>
     </head>
@@ -58,33 +80,43 @@
 
             </div>
 
-            <div class="middle" style="background-color: rgba(0,0,0,0.5);">
+            <div class="middle" style="background-color: rgba(0,0,0,0.5); position: relative;">
                 <center><h2>Duck Client<h2></center>
-                The duck client! Based on the ddnet or infclass client for ddnet/teeworlds! Made by Pointer! Has exciting features!<br>
-                
-                There are no releases yet, but you can find the github repo's below.<br>
+                The duck client! Based on the infclass client for ddnet/teeworlds! Made by Pointer! Has exciting features!<br>
                 <br>
-                <div style="background-color: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 20px; display: inline-flex; text-align: center;"> 
-                    <a href="https://github.com/Pointer31/ddnet_client/tree/infclass-based">
-                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
-                        Github (infclass-based)
-                    </a>
-                </div>
-                <div style="background-color: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 20px; display: inline-flex; text-align: center;"> 
-                    <a href="https://github.com/Pointer31/ddnet_client/tree/master">
-                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
-                        Github (ddnet-based)
-                    </a>
-                </div>
+                You may find the v1 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
+                <br>
+                <!-- <a class="button_fancy" href="./">
+                    <div class="button_width">         
+                    <img style="filter: invert(100%);" src="brands-apple.svg" alt="apple icon" width="30" height="30" style="padding: 15px;">
+                    <div style="">Download (MacOS)</div></div>
+                </a> -->
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v1/infclass-ubuntu-22.04.zip">
+                    <div class="button_width">         
+                    <img style="filter: invert(100%);" src="brands-linux.svg" alt="tux icon" width="30" height="30" style="padding: 15px;">
+                    <div style="">Download (Linux)</div></div>
+                </a>
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v1/infclass-windows-latest.zip">
+                    <div>       
+                    <img style="filter: invert(100%);" src="brands-windows.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
+                    <div style="">Download (Windows)</div></div>
+                </a>
                 <!-- <a href="https://github.com/Pointer31/ddnet_client/tree/infclass-based">Github (infclass based)</a> -->
                 <br><br>Features include:
                 <ul>
                     <li>Several toggles for old versions of UI!</li>
                     <li>Extra particles!</li>
-                    <li>Ducks!</li>
+                    <li>Self kill protection!</li>
+                    <li>Features of the infclass client!</li>                    <li>Ducks!</li>
                 </ul> 
-                The infclass client based version (obviously) also includes various features useful for while playing the infclass gamemode.
+                <!-- The infclass client based version (obviously) also includes various features useful for while playing the infclass gamemode. -->
                 <!-- <div style="position: absolute; bottom: 45px;">  -->
+
+                <div style="position: absolute; bottom: 14px;">
+                    <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/tree/infclass-based">
+                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
+                    </a>
+                </div>
             </div>
 
             <div class="right" style="background-color:transparent;">
