@@ -29,12 +29,13 @@
               width: 60%;
               padding-right: 16px;
               padding-left: 16px;
-              min-height: calc(100vh - 40px); 
+              min-height: calc(100vh - 100px); 
               border-radius: 20px;
               /*min-width: 600px;*/
               /*min-height: 100vh;*/
               /* height: auto !important; min-height hack
               height: 100%;      - 150px       min-height hack*/
+              padding-bottom: 60px;
             }
             @media only screen and (max-width: 1000px) {
                 .middle
@@ -56,12 +57,11 @@
                 display: inline-flex; 
                 text-align: center;
             }
-            .button_fancy_notclickable {
+            .dark_background {
                 background-color: rgba(0, 0, 0, 0.3); 
                 padding: 10px; 
                 border-radius: 20px; 
-                display: inline-flex; 
-                text-align: center;
+                display: inline-flex;
             }
             .button_fancy:hover {
                 background-color: rgba(255, 255, 255, 0.3); 
@@ -85,7 +85,7 @@
                 <center>
                     <img src="duckclient-title.png" alt="Duckclient" height="80" style="padding-top:5px;padding-bottom:5px;">
                 </center>
-                The duck client! Based on the infclass client for ddnet/teeworlds! Made by Pointer! Has exciting features!<br>
+                The duckclient! Based on the  <a href="https://infclass.github.io/">infclass client</a> for <a href="https://ddnet.org/">ddnet</a>/<a href="https://teeworlds.com/">teeworlds</a>, made by Pointer! It aims to add some fancy particles and add back some old UI visuals, while having features of the infclass client too! Among some other things too, like adding more ducks!<br>
                 <br>
                 You may find the v1 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
                 <br>
@@ -112,6 +112,18 @@
                     <li>Self kill protection!</li>
                     <li>Features of the infclass client!</li>                    <li>Ducks!</li>
                 </ul> 
+                List of config options added by the duckclient:<br><br>
+                <div class="dark_background">
+                    cl_extra_particles<br>
+                    cl_old_door_laser<br>
+                    cl_old_freeze_laser<br>
+                    cl_old_client_console<br>
+                    cl_blood_particles<br>
+                    cl_position_community_filter<br>
+                    cl_confirm_kill_time<br>
+                    cl_duck_filter<br>
+                </div>
+                <br>
                 <!-- The infclass client based version (obviously) also includes various features useful for while playing the infclass gamemode. -->
                 <!-- <div style="position: absolute; bottom: 45px;">  -->
 
