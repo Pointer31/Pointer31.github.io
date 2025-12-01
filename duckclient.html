@@ -29,13 +29,13 @@
               width: 60%;
               padding-right: 16px;
               padding-left: 16px;
-              min-height: calc(100vh - 100px); 
+              min-height: calc(100vh - 110px); 
               border-radius: 20px;
               /*min-width: 600px;*/
               /*min-height: 100vh;*/
               /* height: auto !important; min-height hack
               height: 100%;      - 150px       min-height hack*/
-              padding-bottom: 60px;
+              padding-bottom: 70px;
             }
             @media only screen and (max-width: 1000px) {
                 .middle
@@ -63,6 +63,12 @@
                 border-radius: 20px; 
                 display: inline-flex;
             }
+            .dark_background_red {
+                background-color: rgba(100, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex;
+            }
             .button_fancy:hover {
                 background-color: rgba(255, 255, 255, 0.3); 
             }
@@ -85,9 +91,9 @@
                 <center>
                     <img src="duckclient-title.png" alt="Duckclient" height="80" style="padding-top:5px;padding-bottom:5px;">
                 </center>
-                The duckclient! Based on the  <a href="https://infclass.github.io/">infclass client</a> for <a href="https://ddnet.org/">ddnet</a>/<a href="https://teeworlds.com/">teeworlds</a>, made by Pointer! It aims to add some fancy particles and add back some old UI visuals, while having features of the infclass client too! Among some other things too, like adding more ducks!<br>
+                The duckclient! Based on ddnet 19.3 and the  <a href="https://infclass.github.io/">infclass client</a> for <a href="https://ddnet.org/">ddnet</a>/<a href="https://teeworlds.com/">teeworlds</a>, made by Pointer! It aims to add some fancy particles and add back some old UI visuals, while having features of the infclass client too! Among some other things too, like adding more ducks!<br>
                 <br>
-                You may find the v1 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
+                You may find the (outdated!) v1 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
                 <br>
                 <!-- <a class="button_fancy" href="./">
                     <div class="button_width">         
@@ -110,20 +116,40 @@
                     <li>Several toggles for old versions of UI!</li>
                     <li>Extra particles!</li>
                     <li>Self kill protection!</li>
-                    <li>Features of the infclass client!</li>                    <li>Ducks!</li>
+                    <li>Features of the infclass client!</li>                    
+                    <li>Ducks!</li>
                 </ul> 
                 List of config options added by the duckclient:<br><br>
                 <div class="dark_background">
-                    cl_extra_particles<br>
+                    cl_old_client_console<br>
                     cl_old_door_laser<br>
                     cl_old_freeze_laser<br>
-                    cl_old_client_console<br>
+                    cl_extra_particles<br>
                     cl_blood_particles<br>
                     cl_position_community_filter<br>
                     cl_confirm_kill_time<br>
                     cl_duck_filter<br>
+                    cl_weather_snow<br>
+                    cl_ui_width<br>
+                    cl_chat_input_background<br>
+                </div><br><br>
+                Features from the T-Client<br>
+                <div class="dark_background">
+                    tc_custom_communities_url<br>
+                    tc_hammer_rotates_with_cursor<br>
+                </div><br><br>
+                Features from ddnet 19.4 or later<br>
+                <div class="dark_background">
+                    Keyboard support for fonts<br>
+                    cl_chat_background_color<br>
+                    show favorite skins even when not loaded<br>
+                    interactive tee skin preview in skin settings<br>
+                </div><br><br>
+                Features missing<br>
+                <div class="dark_background_red">
+                    Infclass class menu visible in entities mode
                 </div>
-                <br>
+                <br><br>
                 <!-- The infclass client based version (obviously) also includes various features useful for while playing the infclass gamemode. -->
                 <!-- <div style="position: absolute; bottom: 45px;">  -->
 
