@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script src="scripts/snake.js"></script>  -->
+        <meta charset="utf-8">
+        <!-- <link rel="icon" type="image/x-icon" href="images/.png"> -->
+        <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        window.onload = function () {
+            var mvp = document.getElementById('myViewport');
+            mvp.setAttribute('content','width=430');
+        }
+        </script>
+        <style>
+            * {
+                font-family: "Helvetica";            }
+            .row {
+              display: flex;
+            }
+            .column {
+              float: left;
+            }
+            .left {
+              width: calc(20% - 16px);
+              /*border-radius: 10px;*/
+            }
+            .middle {
+              width: 60%;
+              padding-right: 16px;
+              padding-left: 16px;
+              min-height: calc(100vh - 110px); 
+              border-radius: 20px;
+              /*min-width: 600px;*/
+              /*min-height: 100vh;*/
+              /* height: auto !important; min-height hack
+              height: 100%;      - 150px       min-height hack*/
+              padding-bottom: 70px;
+            }
+            .flexbox {
+                flex-direction: row;
+                display: flex;
+            }
+            @media only screen and (max-width: 600px) {
+                .flexbox {
+                    flex-direction: column;
+                }
+            }
+            @media only screen and (max-width: 1000px) {
+                .middle
+                {
+                    min-width: min(90%, 600px)
+                    /*max-width: ;*/
+                }
+            }
+
+            .right {
+              width: calc(20% - 16px);
+              /*border-radius: 10px;*/
+            }
+
+            .button_fancy {
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            }
+            .dark_background {
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex;
+            }
+            .dark_background_red {
+                background-color: rgba(100, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex;
+            }
+            .button_fancy:hover {
+                background-color: rgba(255, 255, 255, 0.3); 
+            }
+            .button_width {
+                min-width: 150px;
+                /*min-height: 60px;*/
+            }
+
+        </style>
+        <title>Duckclient</title>
+    </head>
+    <body style="background-color: black; background-image: url('tw_theme.png'); background-size: cover; color-scheme: dark; color: white;">
+        <div class="row">
+            <div class="left" style="background-color:transparent;">
+
+            </div>
+
+            <div class="middle" style="background-color: rgba(0,0,0,0.5); position: relative;">
+                <center>
+                    <h1>A Page on the Internet</h1>
+                    Are you here for one of the following things?
+                </center>
+                <br>
+                <br>
+                <center>
+                    <a href="duckclient.html"><img src="duckclient-title.png" alt="Duckclient" height="80" style="padding-top:5px;padding-bottom:5px;"></a>
+                    <br><br>
+                    <a href="twplus.html">TW_plus</a>
+                    <br><br><br>
+                    <a href="https://github.com/Pointer31/teeworlds-infclassR">An InfclassR Fork</a>
+                    <br><br>
+                    <!-- <a href="duckclient.html"></a>
+                    <br><br> -->
+                </center>
+            </div>
+
+            <div class="right" style="background-color:transparent;">
+
+            </div>
+        </div>
+    </body>
+</html>

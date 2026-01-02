@@ -13,7 +13,8 @@
         </script>
         <style>
             * {
-                font-family: "Helvetica";            }
+                font-family: "Helvetica";
+            }
             .row {
               display: flex;
             }
@@ -35,15 +36,6 @@
               /* height: auto !important; min-height hack
               height: 100%;      - 150px       min-height hack*/
               padding-bottom: 70px;
-            }
-            .flexbox {
-                flex-direction: row;
-                display: flex;
-            }
-            @media only screen and (max-width: 600px) {
-                .flexbox {
-                    flex-direction: column;
-                }
             }
             @media only screen and (max-width: 1000px) {
                 .middle
@@ -99,21 +91,21 @@
                 <center>
                     <img src="duckclient-title.png" alt="Duckclient" height="80" style="padding-top:5px;padding-bottom:5px;">
                 </center>
-                The duckclient! Based on ddnet 19.5 and the <a href="https://infclass.github.io/">infclass client</a> for <a href="https://ddnet.org/">ddnet</a>/<a href="https://teeworlds.com/">teeworlds</a>, made by Pointer! It aims to add some fancy particles and add back some old UI visuals, while having features of the infclass client too! It also has a few cherry-picked features from newer or other clients. Among some other things too, like adding more ducks!<br>
+                The duckclient! Based on ddnet 19.3 and the  <a href="https://infclass.github.io/">infclass client</a> for <a href="https://ddnet.org/">ddnet</a>/<a href="https://teeworlds.com/">teeworlds</a>, made by Pointer! It aims to add some fancy particles and add back some old UI visuals, while having features of the infclass client too! Among some other things too, like adding more ducks!<br>
                 <br>
-                You may find the v4 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
+                You may find the v3 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
                 <br>
                 <!-- <a class="button_fancy" href="./">
                     <div class="button_width">         
                     <img style="filter: invert(100%);" src="brands-apple.svg" alt="apple icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (MacOS)</div></div>
                 </a> -->
-                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4/infclass-ubuntu-22.04.zip">
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v3/duckinfclass-v3-ubuntu-22.04.zip">
                     <div class="button_width">         
                     <img style="filter: invert(100%);" src="brands-linux.svg" alt="tux icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (Linux)</div></div>
                 </a>
-                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4/infclass-windows-latest.zip">
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v3/duckinfclass-v3-windows-latest.zip">
                     <div>       
                     <img style="filter: invert(100%);" src="brands-windows.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (Windows)</div></div>
@@ -127,50 +119,37 @@
                     <li>Features of the infclass client!</li>                    
                     <li>Ducks!</li>
                 </ul> 
-                List of config options added in the duckclient:<br><br>
-                <div class="flexbox">
-                    <div style="padding-right: 20px;">
-                        Features by the duckclient<br>
-                        <div class="dark_background">
-                            cl_old_client_console<br>
-                            cl_old_door_laser<br>
-                            cl_old_freeze_laser<br>
-                            cl_extra_particles<br>
-                            cl_blood_particles<br>
-                            cl_position_community_filter<br>
-                            cl_confirm_kill_time<br>
-                            cl_duck_filter<br>
-                            cl_weather_snow<br>
-                            cl_ui_width<br>
-                            cl_chat_input_background<br>
-                            ui_color_buttons<br>
-                            ui_color_main_menu<br>
-                            cl_particle_limit (for potato PCs)<br>
-                            cl_replace_escape_key (for broken keyboards)<br>
-                        </div><br><br>
-                    </div>
-                    <div>
-                        Features from the T-Client<br>
-                        <div class="dark_background">
-                            tc_custom_communities_url<br>
-                            tc_hammer_rotates_with_cursor<br>
-                        </div><br><br>
-                        Features from the Kaizo Client<br>
-                        <div class="dark_background">
-                            cl_send_client_type<br>
-                            cl_show_client_type<br>
-                        </div><br><br>
-                        Features from ddnet 19.6 or later<br>
-                        <div class="dark_background">
-                            Revert skin normalization<br>
-                            Rename generic_shadows.png<br>
-                        </div><br><br>
-                        Features missing<br>
-                        <div class="dark_background_red">
-                            Infclass class menu visible in entities mode
-                        </div><br><br>
-                    </div>
+                List of config options added by the duckclient:<br><br>
+                <div class="dark_background">
+                    cl_old_client_console<br>
+                    cl_old_door_laser<br>
+                    cl_old_freeze_laser<br>
+                    cl_extra_particles<br>
+                    cl_blood_particles<br>
+                    cl_position_community_filter<br>
+                    cl_confirm_kill_time<br>
+                    cl_duck_filter<br>
+                    cl_weather_snow<br>
+                    cl_ui_width<br>
+                    cl_chat_input_background<br>
+                </div><br><br>
+                Features from the T-Client<br>
+                <div class="dark_background">
+                    tc_custom_communities_url<br>
+                    tc_hammer_rotates_with_cursor<br>
+                </div><br><br>
+                Features from ddnet 19.4 or later<br>
+                <div class="dark_background">
+                    Keyboard support for fonts<br>
+                    cl_chat_background_color<br>
+                    show favorite skins even when not loaded<br>
+                    interactive tee skin preview in skin settings<br>
+                </div><br><br>
+                Features missing<br>
+                <div class="dark_background_red">
+                    Infclass class menu visible in entities mode
                 </div>
+                <br><br>
                 <!-- The infclass client based version (obviously) also includes various features useful for while playing the infclass gamemode. -->
                 <!-- <div style="position: absolute; bottom: 45px;">  -->
 
