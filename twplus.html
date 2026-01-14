@@ -15,6 +15,9 @@
             * {
                 font-family: "Helvetica";
             }
+            hr {
+                border: 1px solid rgba(0, 0, 0, 0.3);
+            }
             .row {
               display: flex;
             }
@@ -66,32 +69,84 @@
             .button_fancy:hover {
                 background-color: rgba(255, 255, 255, 0.3); 
             }
+            .button_fancy_light {
+                background-color: rgba(255, 255, 255, 0.2); 
+                padding: 10px; 
+                border-radius: 10px; 
+                display: inline-flex; 
+                text-align: center;
+            }.button_fancy_light:hover {
+                background-color: rgba(255, 255, 255, 0.4); 
+            }
+
             .button_width {
                 min-width: 150px;
                 min-height: 60px;
             }
 
+            .back_button {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            } .back_button:hover {
+                background-color: rgba(255, 255, 255, 0.3); 
+            }
+            @media only screen and (max-width: 800px) {
+                .back_button
+                {
+                    display: none;
+                }
+            }
+
         </style>
         <title>TWPlus mod</title>
     </head>
-    <body style="background-color: black; background-image: url('tw_theme.png'); background-size: cover; color-scheme: dark; color: white;">
+    <body style="background-color: rgb(166,178,203); background-image: url('tw_theme.png'); background-repeat: no-repeat; color-scheme: dark; color: white; background-size: max(1920px, 100%); position:relative;">
+        
         <div class="row">
+            <a class="back_button" style="text-decoration: none;" href=".">
+                Go back
+            </a>
+            <!-- <div style="position: absolute; bottom: -10px; left: -10px;">
+                <img src="background_bushes.png" style="width: calc(100% + 8px);">
+            </div> -->
             <div class="left" style="background-color:transparent;">
 
             </div>
 
-            <div class="middle" style="background-color: rgba(0,0,0,0.5);">
-                <center><h2>Teeworlds Plus Server Mod<h2></center>
-                Modification by Pointer of tw+ server by teetime, for the game Teeworlds!<br>
+            <div class="middle" style="background-color: rgba(0,0,0,0.5); position: relative;">
+                <center>
+                    <img src="teeworlds_twplus_icon.png" alt="TW plus" height="80" style="padding-top:5px;padding-bottom:5px;">
+                </center>
+                <!-- <center><h2>Teeworlds Plus Server Mod<h2></center> -->
+                <!-- Modification by Pointer of tw+ server by teetime, for the game Teeworlds!<br> -->
+
+                Another fun server mod of <a href="https://www.teeworlds.com/">Teeworlds</a> 0.7! It adds new gametypes including instagib, as well as map teleports and bots!<br>
                 <br>
-                You may find the v0.9.0 versions below. There is no MacOS build, but you should be able to build it yourself.<br>
+                You may find the v0.9.0 versions on the github. Right now, there is also a 0.7-based version being worked on!<br>
                 <br>
+                <a class="button_fancy" style="text-decoration: none;" href="https://github.com/Pointer31/tw_plus/tree/main">
+                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
+                        &nbsp;old 0.6
+                    </a>
+                    <a class="button_fancy" style="text-decoration: none;" href="https://github.com/Pointer31/tw_plus">
+                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
+                        &nbsp;new 0.7
+                    </a>
+                <br>
+                <hr>
+                <details open=true>
+                        <summary class="button_fancy_light" style="width: calc(100% - 20px);">Features</summary>
+                        <p>
                 <!-- <div class="button_fancy_notclickable">
                     <div class="button_width">       
                     <img style="filter: invert(100%);" src="brands-apple.svg" alt="apple icon" width="30" style="padding: 15px;">
                     <div style="">Compilable</div></div>
                 </div>--> 
-                <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.9.0/tw_plus_0.9.0_linux.zip">
+                <!-- <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.9.0/tw_plus_0.9.0_linux.zip">
                     <div class="button_width">   
                     <img style="filter: invert(100%);" src="brands-linux.svg" alt="tux icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (Linux)</div></div>
@@ -100,20 +155,115 @@
                     <div class="button_width">      
                     <img style="filter: invert(100%);" src="brands-windows.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (Windows)</div></div>
-                </a>
+                </a> -->
                 <!-- <a href="https://github.com/Pointer31/ddnet_client/tree/infclass-based">Github (infclass based)</a> -->
-                <br><br>Features include:
+                <!-- Features include:
                 <ul>
                     <li>Server-side bots!</li>
                     <li>Extra gamemodes!</li>
                     <li>Extra map features!</li>
                     <li>More silly features!</li>
-                </ul> 
-                <div style="position: absolute; bottom: 45px;">
-                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus">
+                </ul>  -->
+                <center>
+                    <h2>Original Teeworlds gametypes!</h2>
+                    <div class=button_fancy_notclickable style="display: inline-block; width: 320px;">
+                        <!-- style="display: inline-flex; padding: 0px 20px 10px 20px;" -->
+                        <div style="display: inline-flex;">
+                            <img src="images/dm.png">
+                            <img src="images/tdm.png">
+                            <img src="images/ctf.png">
+                            <img src="images/lms.png">
+                            <img src="images/lts.png">
+                        </div>
+                        <div style="padding: 20px 10px 10px 10px; text-align: left;">
+                            DM, TDM, CTF, LMS, LTS!
+                        </div>
+                    </div><br><br>
+                    <h2>And instagib variants!</h2>
+                    <div class=button_fancy_notclickable style="display: inline-block; width: 280px;">
+                        <div style="display: inline-flex;">
+                            <div>
+                                <img src="images/tw_weapon_grenade.png" style="height:30px;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <img src="images/tw_weapon_laser.png" style="height:40px; transform: scaleX(-1)">
+                            </div>
+                        </div>
+                        <div style="padding: 20px 10px 10px 10px; text-align: left;">
+                            Instant kills with grenades or lasers!
+                        </div>
+                    </div><br><br>
+                    <h2>Two brand new gametypes!</h2>
+                    <div style="background-color: rgba(0, 0, 0, 0.3); width: 380px; border-radius: 20px; display: block; align-text: left; align: left;">
+                        <div style="display: flex; text-align: left;">
+                            <img src="teeworlds_hidenseekv2.png" alt="" width="100" height="100" style="border-radius: 20px 0 20px 00px;">
+                            <div style="padding-top:18px; padding-left: 20px;">
+                                <h2>Hide and Seek</h2>
+                            </div>
+                        </div><br>
+                        <div style="padding: 0px 20px 20px 20px; text-align: left;">
+                            Seekers will try to kill the Hiders, Hiders need to run!
+                        </div>
+                    </div><br><br>
+                    <div style="background-color: rgba(0, 0, 0, 0.3); width: 380px; border-radius: 20px; display: block; align-text: left; align: left;">
+                        <div style="display: flex; text-align: left;">
+                            <img src="teeworlds_htf_icon.png" alt="" width="100" height="100" style="border-radius: 20px 0 20px 00px;">
+                            <div style="padding-top:18px; padding-left: 20px;">
+                                <h2>Hold the Flag</h2>
+                            </div>
+                        </div><br>
+                        <div style="padding: 0px 20px 20px 20px; text-align: left;">
+                            Hold the flag to gain points over time!
+                        </div>
+                    </div><br><br>
+                    <!-- <div style="background-color: rgba(0, 0, 0, 0.3); width: 340px; border-radius: 20px; display: inline-flex; align: center;">
+                        <img src="teeworlds_htf_icon.png" alt="" width="100" style="border-radius: 20px 0 0 20px;">
+                        <div style="padding:18px; padding-bottom: 0;">
+                            <h2>Hold the Flag</h2>
+                        </div>
+                    </div><br><br> -->
+                    <h2>Server-side bots!</h2>
+                    <div class=button_fancy_notclickable style="max-width: 600px;">
+                        bots pew pew, with multiple difficulties and 2 types! They can be added and removed automatically while there are few human players!
+                    </div><br><br>
+                    <h2>Map teleports!</h2>
+                    <div class=button_fancy_notclickable style="max-width: 600px;">
+                        :O kinda not intuitive to use though. They work differently than ddrace teleports, being more smooth and maybe more suited for PvP maps! (and more confusing to place in a map as mentioned)
+                    </div>
+                </center>
+                    </p>
+                </details>
+                <br>
+                <details open=true>
+                    <summary class="button_fancy_light" style="width: calc(100% - 20px);">For server hosters</summary>
+                    <center>
+                    <br>
+                    <div class=button_fancy_notclickable style="text-align: left; display: inline-block; max-width: 1000px;">
+                        <p>
+                            what type of instagib you want can be set with sv_instagib. 0 for no instagib, 1 for laser instagib and 2 for grenade instagib. It will take effect on a reload. Note that hide and seek is not affected by this.
+                        </p>
+                        <p>
+                            To set the custom gametypes use sv_gametype "htf" for hold the flag or "hns"/"hidnsek" for hide and seek.
+                        </p>
+                        <p>
+                            To automatically add bots, set sv_bots_minimum_players. The server will then add as many bots as are required to have that many people playing, at least. When somebody joins or leaves, it will change the amount of bots appropriately.
+                        </p>
+                    </div>
+                    </center>
+                </details>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div style="position: absolute; bottom: 14px;">
+                    <a class="button_fancy" style="text-decoration: none;" href="https://github.com/Pointer31/tw_plus">
                         <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
                     </a>
-                </div>
+                    <!-- <a class="button_fancy" style="text-decoration: none;" href="https://github.com/Pointer31/tw_plus">
+                        <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: 15px;">
+                        &nbsp;new 0.7
+                    </a> -->
+               </div>
             </div>
 
             <div class="right" style="background-color:transparent;">
