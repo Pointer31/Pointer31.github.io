@@ -85,11 +85,32 @@
                 /*min-height: 60px;*/
             }
 
+            .back_button {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.3); 
+                padding: 10px; 
+                border-radius: 20px; 
+                display: inline-flex; 
+                text-align: center;
+            } .back_button:hover {
+                background-color: rgba(255, 255, 255, 0.3); 
+            }
+            @media only screen and (max-width: 800px) {
+                .back_button
+                {
+                    display: none;
+                }
+            }
+
         </style>
         <title>Duckclient</title>
     </head>
     <body style="background-color: black; background-image: url('duck_theme.png'); background-size: cover; color-scheme: dark; color: white;">
         <div class="row">
+            <a class="back_button" style="text-decoration: none;" href=".">
+                Go back
+            </a>
+
             <div class="left" style="background-color:transparent;">
 
             </div>
@@ -101,24 +122,24 @@
                 </center>
                 The duckclient! Based on ddnet 19.5 and the <a href="https://infclass.github.io/">infclass client</a> for <a href="https://ddnet.org/">ddnet</a>/<a href="https://teeworlds.com/">teeworlds</a>, made by Pointer! It aims to add some fancy particles and add back some old UI visuals, while having features of the infclass client too! It also has a few cherry-picked features from newer or other clients. Among some other things too, like adding more ducks!<br>
                 <br>
-                You may find the v4.1 versions below!<br>
+                You may find the v4.2 versions below!<br>
                 <br>
                 <!-- <a class="button_fancy" href="./">
                     <div class="button_width">         
                     <img style="filter: invert(100%);" src="brands-apple.svg" alt="apple icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (MacOS)</div></div>
                 </a> -->
-                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4.1/duck_infclass_client-ubuntu22.tar.xz">
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4.2/duck-infclass-client-4.2-ubuntu22.tar.xz">
                     <div class="button_width">         
                     <img style="filter: invert(100%);" src="brands-linux.svg" alt="tux icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (Linux)</div></div>
                 </a>
-                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4.1/duck_infclass_client-windows.zip">
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4.2/duck-infclass-client-4.2-windows.zip">
                     <div>       
                     <img style="filter: invert(100%);" src="brands-windows.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (Windows)</div></div>
                 </a>
-                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4.1/duck_infclass_client.dmg">
+                <a class="button_fancy" href="https://github.com/Pointer31/ddnet_client/releases/download/duckclient-v4.2/duck-infclass-client-4.2-macos.dmg">
                     <div>       
                     <img style="filter: invert(100%);" src="brands-apple.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
                     <div style="">Download (macOS)</div></div>
@@ -152,8 +173,13 @@
                             ui_color_main_menu<br>
                             cl_scoreboard_style<br>
                             cl_scoreboard_shorten<br>
+                            cl_upsidedown_tees<br>
                             cl_particle_limit (for potato PCs)<br>
                             cl_replace_escape_key (for broken keyboards)<br>
+                            0.7-like statboard!<br>
+                            0.7-ish vote subheaders!<br>
+                            Some menu themes and skins!<br>
+                            infinite ammo display!<br>
                         </div><br><br>
                     </div>
                     <div>
@@ -162,15 +188,18 @@
                             tc_custom_communities_url<br>
                             tc_hammer_rotates_with_cursor<br>
                         </div><br><br>
-                        <!-- Features from the Kaizo Client<br>
+                        Features from the Kaizo Client<br>
                         <div class="dark_background">
                             cl_send_client_type<br>
                             cl_show_client_type<br>
-                        </div><br><br> -->
+                        </div><br><br>
                         Features from ddnet 19.6 or later<br>
                         <div class="dark_background">
                             Revert skin normalization<br>
-                            Rename generic_shadows.png<br>
+                            Fix 0.7 client connection not translating generic_shadows<br>
+                            Fix prediction when player has no weapon<br>
+                            game-0.6 asset with ddnet shields<br>
+                            Replace line breaks with spaces when pasting multiple lines in chat<br>
                         </div><br><br>
                         Features missing<br>
                         <div class="dark_background_red">
