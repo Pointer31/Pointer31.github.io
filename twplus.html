@@ -130,23 +130,28 @@
                 Another fun server mod of <a href="https://www.teeworlds.com/">Teeworlds</a> 0.7! It adds new gametypes including instagib, as well as map teleports and bots!<br>
                 
                 <br>
-                See v0.10-pre2 versions below.<br>
+                See v0.10 versions below.<br>
                 <br>
                     <!-- <a class="button_fancy" style="text-decoration: none;" href="https://github.com/Pointer31/tw_plus/tree/main">
                         <img style="filter: invert(100%);" src="icongithub.svg" alt="github icon" width="30" style="padding: -->
-                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.10-pre/teeworlds-ubuntu-22.04.zip">
+                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.10.0/twplus-0.10.0-linux-ubuntu22.zip">
                         <div class="button_width">   
                         <img style="filter: invert(100%);" src="brands-linux.svg" alt="tux icon" width="30" height="30" style="padding: 15px;">
                         <div style="">Download (Linux)</div></div>
                     </a>
-                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.10-pre/teeworlds-windows-latest.zip">
+                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.10.0/twplus-0.10.0-windows.zip">
                         <div class="button_width">      
                         <img style="filter: invert(100%);" src="brands-windows.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
                         <div style="">Download (Windows)</div></div>
                     </a>
-                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/archive/refs/tags/v0.10-pre.zip">
+                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/releases/download/v0.10.0/twplus-0.10.0-macos.dmg">
                         <div class="button_width">      
-                        <img style="filter: invert(100%);" src="empty.png" alt="window icon" width="30" height="30" style="padding: 15px;">
+                        <img style="filter: invert(100%);" src="brands-apple.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
+                        <div style="">Download (MacOS)</div></div>
+                    </a>
+                    <a class="button_fancy" href="https://github.com/Pointer31/tw_plus/archive/refs/tags/v0.10.0.zip">
+                        <div class="button_width">      
+                        <img style="filter: invert(100%);" src="square.svg" alt="window icon" width="30" height="30" style="padding: 15px;">
                         <div style="">Download (Source)</div></div>
                     </a>
                     <!-- <a cla ss="button_fancy" href="https://github.com/Pointer31/tw_plus/">
@@ -226,13 +231,13 @@
                     </div><br><br> -->
                     <h2>Server-side bots!</h2>
                     <div class=button_fancy_notclickable style="max-width: 600px; text-align: left;">
-                        <img src="teeworlds_bot.png" alt="" width="60" height="60">
+                        <img src="images/teeworlds_bot.png" alt="" width="60" height="60">
                         <div style="padding-left: 8px"></div>
                         bots pew pew, with multiple difficulties and 2 types! They can be added and removed automatically while there are few human players! Most suited for DM but can play CTF too.
                     </div><br><br>
                     <h2>Map teleports!</h2>
                     <div class=button_fancy_notclickable style="max-width: 600px; text-align: left;">
-                        <img src="teeworlds_teleports.png" alt="" width="60" height="60">
+                        <img src="images/teeworlds_teleports.png" alt="" width="60" height="60">
                         <div style="padding-left: 8px"></div>
                         :O kinda not intuitive to use though. They work differently than ddrace teleports, being more smooth and maybe more suited for PvP maps! (and more confusing to place in a map as mentioned)
                     </div><br><br>
@@ -248,11 +253,17 @@
                         <div style="padding-left: 8px"></div>
                         While in the boost tile, players quickly accelerate upward. If the boost tiles are placed underneath solid tiles, it will increase the player's jump power!
                     </div><br><br>
+                    <h2>New powerups!</h2>
+                    <div class=button_fancy_notclickable style="max-width: 600px; text-align: left;">
+                        <img src="images/powerups.png" alt="" width="60" height="60">
+                        <div style="padding-left: 8px"></div>
+                        If enabled, there is a chance that instead of a ninja you get the strength or shields powerup! Strength makes you deal 2x damage for 15s, and shields makes you always have a little bit of armor for 15s!
+                    </div><br><br>
                     <h2>Other Silly Features!</h2>
                     <div class=button_fancy_notclickable style="max-width: 600px; text-align: left;">
                         <img src="images/emoticon_wtf.png" alt="" width="60" height="60">
                         <div style="padding-left: 8px"></div>
-                        Other silly features are also added! Such as particles while pickups are respawning, laser deaths, touch exploding! And also match-end messages to show who won, laserjumps, and a terribly made race gamemode!
+                        Other silly features are also added! Such as particles while pickups are respawning, laser deaths, touch exploding! And also match-end messages to show who won, laserjumps, and a terribly made race gamemode! and +5hp, +5armor pickups! and some ddnet client support! Kill sprees!
                     </div>
                 </center>
                     </p>
@@ -272,6 +283,13 @@
                         <p>
                             To automatically add bots, set sv_bots_minimum_players. The server will then add as many bots as are required to have at least that many people playing. When somebody joins or leaves, it will change the amount of bots appropriately.
                         </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class=button_fancy_notclickable style="text-align: left; display: inline-block;">
+                        entities image for the editor:
+                    <br>
+                        <img src="images/entities_twplus.png" style="max-width: 100%;">
                     </div>
                     </center>
                 </details>
